@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="order">
+    <div class="checkout__order">
       <div class="cart">
         <div class="cart__header header">
           <h4>Product</h4>
@@ -33,18 +33,19 @@
             </figure>
 
             <div class="product__info">
-              <div class="product__title">Men's T-Shirt</div>
+              <h5 class="product__title">Men's T-Shirt</h5>
 
               <div class="product__details">
-                <div class="product__color">White</div>
-                <div class="product__size">XL</div>
-                <div class="product__quantity">1x36.00</div>
+                <h6 class="product__color">White</h6>
+                <h6 class="product__size">XL</h6>
+                <h6 class="product__quantity">1x36.00</h6>
               </div>
             </div>
           </div>
 
-          <div class="product__price">$36.00</div>
+          <h4 class="product__price">$36.00</h4>
         </div>
+
         <div class="product">
           <div>
             <figure class="product__image">
@@ -55,18 +56,19 @@
             </figure>
 
             <div class="product__info">
-              <div class="product__title">Men's T-Shirt</div>
+              <h5 class="product__title">Men's T-Shirt</h5>
 
               <div class="product__details">
-                <div class="product__color">Blue</div>
-                <div class="product__size">XL</div>
-                <div class="product__quantity">1x36.00</div>
+                <h6 class="product__color">Blue</h6>
+                <h6 class="product__size">XL</h6>
+                <h6 class="product__quantity">1x36.00</h6>
               </div>
             </div>
           </div>
 
-          <div class="product__price">$36.00</div>
+          <h4 class="product__price">$36.00</h4>
         </div>
+
         <div class="product">
           <div>
             <figure class="product__image">
@@ -77,17 +79,17 @@
             </figure>
 
             <div class="product__info">
-              <div class="product__title">Women's T-Shirt</div>
+              <h5 class="product__title">Women's T-Shirt</h5>
 
               <div class="product__details">
-                <div class="product__color">Black</div>
-                <div class="product__size">XL</div>
-                <div class="product__quantity">1x36.00</div>
+                <h6 class="product__color">Black</h6>
+                <h6 class="product__size">XL</h6>
+                <h6 class="product__quantity">1x36.00</h6>
               </div>
             </div>
           </div>
 
-          <div class="product__price">$36.00</div>
+          <h4 class="product__price">$36.00</h4>
         </div>
 
         <div class="cart__details">
@@ -110,6 +112,41 @@
           <h5>$109.00</h5>
         </div>
       </div>
+
+      <div class="payment">
+        <div class="payment__header header">
+          <h4>Payment</h4>
+        </div>
+
+        <form
+          action="#"
+          class="payment__form">
+          <fieldset>
+            <label for="bank">Direct Bank Transfer</label>
+            <input
+              type="radio"
+              name="payment" />
+          </fieldset>
+
+          <fieldset>
+            <label for="cash">Cash on Delivery</label>
+            <input
+              type="radio"
+              name="payment" />
+          </fieldset>
+
+          <fieldset>
+            <label for="online">Online Gateway</label>
+            <input
+              type="radio"
+              name="payment" />
+          </fieldset>
+        </form>
+      </div>
+
+      <input
+        type="submit"
+        value="Place order" />
     </div>
   </body>
 </html>
