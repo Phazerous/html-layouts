@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Navbar Section</title>
+    <title>Header Section</title>
 
     <link
       rel="stylesheet"
@@ -22,105 +22,36 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <nav>
-      <section>
-        <div class="display">
-          <fieldset class="language">
-            <label for="lang">Language</label>
-            <select>
-              <option value="English">English</option>
-              <option value="French">French</option>
-              <option value="Turkisk">Turkisk</option>
-              <option value="Arabic">Arabic</option>
-              <option value="Spanish">Spanish</option>
-            </select>
-          </fieldset>
+    <main class="hero">
+      <figure class="hero__image">
+        <img
+          loading="lazy"
+          src="./assets/images/woman.jpg"
+          alt="Woman" />
+      </figure>
 
-          <fieldset class="currency">
-            <label for="lang">Currency</label>
-            <select>
-              <option value="USD">USD</option>
-              <option value="EURO">EURO</option>
-              <option value="GBP">GBP</option>
-            </select>
-          </fieldset>
+      <div class="hero__hero-content">
+        <h5 class="hero-content__mini-title">Trending Products</h5>
+
+        <h1 class="hero-content__title">
+          New Arrivals From Women's Collections
+        </h1>
+        <p class="hero-content__subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          magnam fugiat expedita nulla itaque illo, quisquam porro! Magnam,
+          dolorum nam.
+        </p>
+
+        <input
+          class="hero-content__btn"
+          type="button"
+          value="Shop Now" />
+
+        <div class="controls">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
         </div>
-
-        <ul class="about">
-          <li>About Us</li>
-          <li>Order Tracking</li>
-          <li>Contact Us</li>
-          <li>FAQs</li>
-        </ul>
-      </section>
-
-      <section class="categories">
-        <div>
-          <h2 class="categories__logo">EL</h2>
-
-          <fieldset class="search-bar">
-            <select>
-              <option value="All Categories">All Categories</option>
-              <option value="Womens">Womens</option>
-              <option value="Mens">Mens</option>
-              <option value="Accessories">Accessories</option>
-              <option value="Kids">Kids</option>
-              <option value="More Items">More Items</option>
-            </select>
-
-            <input
-              type="text"
-              placeholder="I'm shopping for ..."
-              class="search-field" />
-            <input
-              type="button"
-              value="Search"
-              class="search-btn" />
-          </fieldset>
-        </div>
-
-        <div>
-          <div class="favorites">
-            <div>
-              <i class="fa-solid fa-heart"></i>
-              <span class="fav">3</span>
-            </div>
-
-            <div>
-              <a href="#">Favorites</a>
-              <a href="#">My Wishlist</a>
-            </div>
-          </div>
-
-          <div class="account">
-            <div>
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="fav">7</span>
-            </div>
-
-            <div>
-              <a href="#">Login</a>
-              <a href="#">My Account</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="fast-access">
-        <ul class="navigation">
-          <li>Womens</li>
-          <li>Mens</li>
-          <li>Accessories</li>
-          <li>Kids</li>
-          <li>More Items</li>
-        </ul>
-
-        <div class="help">
-          <i class="fa-solid fa-phone"></i>
-          <p>Need help?</p>
-          <p>0093 1234 567 8912</p>
-        </div>
-      </section>
-    </nav>
+      </div>
+    </main>
   </body>
 </html>
