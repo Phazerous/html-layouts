@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Customer Reviews</title>
+    <title>Product Carousel</title>
 
     <link
       rel="stylesheet"
@@ -23,117 +23,87 @@
   </head>
   <body>
     <main>
-      <h1>Most recent reviews</h1>
+      <header class="header">
+        <h3 class="header__subtitle">Most Popular Products</h3>
+        <h1 class="header__title">Best Selling Items</h1>
+        <p class="header__description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+          corporis praesentium, sequi necessitatibus tempore non!
+        </p>
+      </header>
 
-      <div class="reviews">
-        <div class="review">
-          <div class="customer">
-            <figure class="customer__image">
-              <img
-                src="./assets/5.1.jpg"
-                alt="Customer 1" />
-            </figure>
-
-            <div>
-              <h3 class="customer__name">Jane Smith</h3>
-              <h4 class="review__date">Jan 1st, 2023</h4>
-            </div>
+      <section class="product-list">
+        <i class="fa-solid fa-arrow-left"></i>
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/6.1.jpg"
+              alt="Product 1" />
+          </figure>
+          <div class="product__tag tag-new">
+            New
+            <i class="fa-solid fa-star"></i>
           </div>
-
-          <div class="review__rating">
-            <ul>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </ul>
-
-            <p>5.0</p>
+          <div class="product__features">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
-
-          <div class="review__content">
-            <h2 class="review__title">I really like this product</h2>
-            <p class="review__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-              assumenda aspernatur aliquam vel harum nobis non vero delectus
-              voluptates necessitatibus maiores, ut magni laudantium vitae?
-            </p>
-          </div>
+          <h4 class="product__name">Men's Shirt</h4>
+          <h3 class="product__price">$35.00</h3>
         </div>
 
-        <div class="review">
-          <div class="customer">
-            <figure class="customer__image">
-              <img
-                src="./assets/5.2.jpg"
-                alt="Customer 2" />
-            </figure>
-
-            <div>
-              <h3 class="customer__name">Samantha Smith</h3>
-              <h4 class="review__date">Dec 1st, 2022</h4>
-            </div>
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/6.2.jpg"
+              alt="Product 1" />
+          </figure>
+          <div class="product__features">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
-
-          <div class="review__rating">
-            <ul>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </ul>
-
-            <p>5.0</p>
-          </div>
-
-          <div class="review__content">
-            <h2 class="review__title">I really like this product</h2>
-            <p class="review__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-              assumenda aspernatur aliquam vel harum nobis non vero delectus
-              voluptates necessitatibus maiores, ut magni laudantium vitae?
-            </p>
-          </div>
+          <h4 class="product__name">Women's Jacket</h4>
+          <h3 class="product__price">$55.00</h3>
         </div>
 
-        <div class="review">
-          <div class="customer">
-            <figure class="customer__image">
-              <img
-                src="./assets/5.3.jpg"
-                alt="Customer 3" />
-            </figure>
-
-            <div>
-              <h3 class="customer__name">John Smith</h3>
-              <h4 class="review__date">Nov 1st, 2022</h4>
-            </div>
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/6.3.jpg"
+              alt="Product 3" />
+          </figure>
+          <div class="product__tag tag-hot">
+            Hot
+            <i class="fa-solid fa-fire"></i>
           </div>
-
-          <div class="review__rating">
-            <ul>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </ul>
-
-            <p>4.5</p>
+          <div class="product__features">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
-
-          <div class="review__content">
-            <h2 class="review__title">I really like this product</h2>
-            <p class="review__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-              assumenda aspernatur aliquam vel harum nobis non vero delectus
-              voluptates necessitatibus maiores, ut magni laudantium vitae?
-            </p>
-          </div>
+          <h4 class="product__name">Men's Jacket</h4>
+          <h3 class="product__price">$75.00</h3>
         </div>
-      </div>
+
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/6.4.jpg"
+              alt="Product 4" />
+          </figure>
+          <div class="product__features">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h4 class="product__name">Women's Jacket</h4>
+          <h3 class="product__price">$45.00</h3>
+        </div>
+
+        <i class="fa-solid fa-arrow-right"></i>
+      </section>
     </main>
   </body>
 </html>
