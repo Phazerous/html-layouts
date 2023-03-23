@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Product Details</title>
+    <title>Product Portfolio</title>
 
     <link
       rel="stylesheet"
@@ -22,117 +22,74 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <main>
-      <section class="product-images">
-        <figure class="product-images__main">
-          <img
-            src="./assets//images/8.1.jpg"
-            alt="Style 1" />
-        </figure>
+    <main class="portfolio">
+      <section class="left">
+        <div class="portfolio__content">
+          <div>
+            <h6 class="portfolio__subtitle">Portfolio</h6>
+            <h1 class="portfolio__title">
+              Check out some of our recent products
+            </h1>
+          </div>
 
-        <div class="product-images__other">
-          <figure class="other__image">
+          <p class="portfolio__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim
+            fuga, autem nostrum provident accusamus.
+          </p>
+        </div>
+
+        <div class="product">
+          <figure class="product__image">
             <img
-              src="./assets/images/8.2.jpg"
-              alt="Style 2" />
+              src="./assets/images/9.1.jpg"
+              alt="Invitation" />
           </figure>
 
-          <figure class="other__image">
+          <div>
+            <h6 class="product__subtitle">Invitation</h6>
+            <h2 class="product__title">Product 1</h2>
+          </div>
+        </div>
+
+        <div class="product">
+          <figure class="product__image">
             <img
-              src="./assets/images/8.3.jpg"
-              alt="Style 3" />
+              src="./assets/images/9.2.jpg"
+              alt="Packaging" />
           </figure>
 
-          <figure class="other__image">
-            <img
-              src="./assets/images/8.4.jpg"
-              alt="Style 4" />
-          </figure>
+          <div>
+            <h6 class="product__subtitle">Packaging</h6>
+            <h2 class="product__title">Product 2</h2>
+          </div>
         </div>
       </section>
 
-      <section class="product">
-        <h1 class="product__title">Men's Shirt</h1>
-
-        <div class="product__rating">
-          <div>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-
-          <h6>35 Ratings</h6>
-        </div>
-
-        <p class="product__description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
-          quidem provident eveniet laboriosam, non, repellendus ut rerum tempora
-          veritatis fugit quibusdam voluptates ullam tenetur autem?
-        </p>
-
-        <div>
-          <div class="product__quanity">
-            <h4>Quantity</h4>
-            <p>
-              <span>-</span>
-              <span>1</span>
-              <span>+</span>
-            </p>
-          </div>
-
-          <div class="product__price">
-            <h3>$29.00</h3>
-            <p>12% VAT Added</p>
-          </div>
-        </div>
-
-        <input
-          class="product__cart"
-          type="button"
-          value="Add to cart" />
-
-        <div class="product__details">
-          <h4>Product Details</h4>
+      <section class="right">
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/9.3.jpg"
+              alt="Stationary" />
+          </figure>
 
           <div>
-            <div class="product__detail">
-              <h5>Size</h5>
-              <h5>Small, Medium, Large</h5>
-            </div>
-
-            <div class="product__detail">
-              <h5>Color</h5>
-              <h5>White, Blue, Pink</h5>
-            </div>
-
-            <div class="product__detail">
-              <h5>Brand</h5>
-              <h5>EL Merch</h5>
-            </div>
+            <h6 class="product__subtitle">Stationary</h6>
+            <h2 class="product__title">Product 3</h2>
           </div>
         </div>
 
-        <div class="product__size">
-          <h4>Select Size</h4>
+        <div class="product">
+          <figure class="product__image">
+            <img
+              src="./assets/images/9.4.jpg"
+              alt="Invitation" />
+          </figure>
 
-          <ul>
-            <li>Small</li>
-            <li>Medium</li>
-            <li>Large</li>
-          </ul>
-        </div>
-
-        <div class="product__color">
-          <h4>Select Color</h4>
-
-          <ul>
-            <li class="color_red"></li>
-            <li class="color_red"></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div>
+            <h6 class="product__subtitle">Prototype</h6>
+            <h2 class="product__title">Product 4</h2>
+          </div>
         </div>
       </section>
     </main>
