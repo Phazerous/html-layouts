@@ -13,61 +13,92 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 85%;
-}
-
-h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 p {
   font-size: 1.6rem;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
 h6 {
   font-size: 1.2rem;
+}
+
+.team {
+  padding: 4rem 8rem;
+  row-gap: 6rem;
+}
+
+.team,
+.team__header,
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__header,
+.team__member {
+  row-gap: 2rem;
+}
+
+.team__subtitle {
   color: #0000ff;
 }
 
-.portfolio {
-  padding: 4rem 8rem;
+.team__content {
   display: flex;
-  column-gap: 3.2rem;
-  justify-content: center;
+  justify-content: space-between;
+  column-gap: 3rem;
+  color: #fff;
 }
 
-.left,
-.right {
-  display: flex;
-  flex-direction: column;
-  row-gap: 4.8rem;
-  flex-basis: 40%;
-}
-
-.product__image img {
+.team__member {
+  background-color: #06283d;
   border-radius: 2rem;
-  border: 1px solid rgba(0 0 0 / 0.1);
+  padding: 3rem 2rem;
+}
+
+.member__image {
+  margin-top: -8rem;
+  height: 16rem;
+  width: 16rem;
+}
+
+.member__image img {
+  border-radius: 50%;
+  border: 4px solid white;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.product {
+.member__social {
   display: flex;
-  flex-direction: column;
-  row-gap: 1.6rem;
+  justify-content: space-between;
+  column-gap: 1.3rem;
 }
 
-.product > div {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.2rem;
+.fa-brands {
+  padding: 1.2rem;
+  background-color: #08324c;
+  border-radius: 50%;
+  font-size: 1.4rem;
 }
 
-.portfolio__content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
+.team__content > .team__member:first-of-type > .member__image img {
+  object-position: right center;
 }
