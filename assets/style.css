@@ -13,46 +13,91 @@ body {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-p {
-  font-size: 1.8rem;
+h4 {
+  font-size: 1.2rem;
 }
 
-.blog {
-  padding: 3rem 16rem;
+.pricing {
+  height: 100vh;
+  padding: 0 8rem;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3.2rem;
+  grid-template-columns: repeat(4, 27rem);
+  justify-content: space-between;
+  align-content: center;
+}
+
+.subscription {
+  padding: 2rem 2rem 3rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0 0 0 / 0.1);
+
+  display: grid;
   row-gap: 2.4rem;
 }
 
-.blog__post {
-  padding: 3rem 1.6rem 5rem;
-  border: 1px solid #e3590fb2;
-  border-radius: 1rem;
+.subscription__details {
+  color: rgba(0 0 0 / 0.7);
+}
 
+.subscription__name,
+.subcription__pricing,
+.subscription__details {
   display: grid;
-  grid-template-rows: repeat(4, min-content);
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
-.post__more {
-  color: #fff;
-  padding: 1.2rem 2rem;
-  border-radius: 0.8rem;
-  justify-self: start;
-  background-color: orangered;
+.pricing > .subscription:first-of-type .subscription__plan {
+  background-color: #31a6e1;
+}
+
+.subscription__plan {
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0.8rem 0;
+  background-color: #5662f6;
+  border-radius: 0.4rem;
+  text-align: center;
   border: none;
+  color: #fff;
+
+  transition: all 0.3s ease-in;
 }
 
-.post__image img {
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
-  width: 100%;
-  height: 20rem;
+.subscription__plan:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
 
-  object-fit: cover;
+.subscription__details > div {
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 1.6rem;
+}
+
+.subscription__price_striked {
+  text-decoration: line-through;
+  color: rgba(0 0 0 / 0.4);
+}
+
+.subcription__pricing div:first-child {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 1.2rem;
+}
+
+.subscription__subtitle {
+  color: rgba(0 0 0 / 0.4);
+}
+
+.fa-check {
+  color: #27e246;
+}
+
+.fa-xmark {
+  color: #ea6357;
 }
