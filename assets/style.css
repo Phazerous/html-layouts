@@ -12,139 +12,122 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h6 {
-  font-size: 1.1rem;
-}
-
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-h3 {
+h6 {
   font-size: 1.2rem;
 }
 
-p {
-  font-size: 1.4rem;
-}
-
-.team {
+.contact {
   display: grid;
-  grid-template-rows: repeat(2, min-content);
-  row-gap: 4rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, min-content);
 
-  padding: 4rem 0;
-  background-color: #f2f6f7;
+  padding: 5rem 7rem;
+  position: relative;
 }
 
-.team__header {
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  justify-items: center;
-  row-gap: 2.4rem;
-}
-
-.team__mini-title {
-  color: #757575;
-}
-
-.team__content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: min-content;
-  column-gap: 2rem;
-
-  overflow: hidden;
-  padding: 0 4rem;
-}
-
-.member {
-  padding: 2rem 0;
-  display: grid;
-  grid-template-rows: repeat(4, min-content);
-  row-gap: 2rem;
-  justify-items: center;
-
-  background-color: #fff;
-  border-radius: 0.8rem;
-}
-
-.member > div:first-of-type {
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  justify-items: center;
-}
-
-.member__job {
-  color: #757575;
-}
-
-.member__image {
-  width: 15rem;
-  height: 15rem;
-}
-
-.member__image img {
+.contact::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  background-color: #f2fcff;
+  height: 70%;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(0 0 0 / 0.09);
-  box-shadow: 2px 8px 6px grey;
 }
 
-.team__content .member:nth-of-type(1) .member__image img {
-  object-position: 0% 12%;
+.contact__title-container {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
 }
 
-.team__content .member:nth-of-type(2) .member__image img {
-  object-position: 10%;
+.contact__subtitle {
+  color: rgb(146, 146, 146);
 }
 
-.team__content .member:nth-of-type(3) .member__image img {
-  object-position: 25%;
+.contact__title span {
+  display: block;
 }
 
-.team__content .member:nth-of-type(4) .member__image img {
-  object-position: 80% 10%;
+.contact__location {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
 }
 
-.team__content
-  .member:is(:nth-of-type(1), :nth-of-type(2), :nth-of-type(3), :nth-of-type(4))
-  .member__image
-  img {
-  transition: all 0.3s ease-in;
+.contact__email {
+  grid-column: 4 / span 2;
+  grid-row: 5 / 6;
 }
 
-.team__content
-  .member:is(:nth-of-type(1), :nth-of-type(2), :nth-of-type(3), :nth-of-type(4))
-  .member__image
-  img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in;
-}
-
-.social {
+.contact__location,
+.contact__email {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1rem;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: repeat(2, min-content);
 }
 
-.fa-brands {
-  background-color: #f2f6f7;
-  padding: 1rem;
-  border-radius: 50%;
+.fa-envelope,
+.fa-location-dot {
+  color: #75c9e7;
   font-size: 1.6rem;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
 }
 
-.fa-brands:hover {
-  color: #0b85ee;
-  transform: scale(1.3);
-  transition: all 0.2s ease-in;
+.contact__location .location__title,
+.contact__email .email__title {
+  grid-column: 2 / -1;
+}
+
+.contact__location .location__subtitle,
+.contact__email .email__subtitle {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.contact__form {
+  grid-column: 7 / -1;
+  grid-row: 1 / -1;
+
+  display: grid;
+  row-gap: 3rem;
+
+  padding: 4rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px lightgray;
+  background-color: #fff;
+}
+
+.contact__form > fieldset {
+  display: grid;
+  border: none;
+}
+
+.contact__form label {
+  font-size: 1.2rem;
+}
+
+:is(.form__name, .form__email, .form__phone, .form__message) input {
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom-right-radius: 0.4rem;
+  outline: none;
+}
+
+.form__submit {
+  padding: 0.8rem 0;
+  background-color: #4444f2;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  font-weight: 400;
 }
