@@ -12,149 +12,75 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  height: 100vh;
+h2 {
+  font-size: 2rem;
 }
 
-p {
-  font-size: 1.6rem;
-  text-align: center;
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-.signup {
-  height: 80rem;
-  width: 120rem;
+.products {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 45rem);
+  grid-template-rows: repeat(2, min-content);
+  gap: 1rem;
+
+  grid-auto-flow: column;
+  grid-auto-columns: 45rem;
+}
+
+.product {
+  border-radius: 0.4rem;
+  overflow: hidden;
+
+  border: 1px solid rgba(0 0 0 / 0.1);
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
-
-  margin: 5rem auto;
-
-  grid-template-areas:
-    'logo mini-title' 'logo__desc title' 'img email' 'img password'
-    'img signup' 'img signin' 'img already';
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 5.5rem);
+  row-gap: 0.8rem;
 }
 
-h5 {
-  font-size: 1.6rem;
-  font-weight: 400;
+.product__title,
+.product__rating {
+  margin-left: 1rem;
 }
 
-h6 {
-  font-size: 1.5rem;
-  color: grey;
+.product__image {
+  grid-row: 1 / 5;
+  grid-column: 1 / -1;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-.email,
-.password,
-.signup__signup-btn,
-.signin-btn {
-  align-self: center;
-}
-
-fieldset {
-  border: none;
-  outline: none;
-}
-
-.signup__logo {
-  justify-self: center;
-}
-
-.signup__logo img {
-  width: 3.2rem;
-  height: 3.2rem;
-}
-
-.signup__image img {
-  width: 100%;
+.product__image img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
-.signup__logo {
-  grid-area: logo;
+.product__title {
+  grid-row: 5 / 6;
+  grid-column: 1 / 4;
+  align-self: end;
 }
 
-.mini-title {
-  grid-area: mini-title;
-  align-self: center;
+.product__price {
+  grid-row: 5 / 6;
+  grid-column: 4 / 5;
+  align-self: end;
+  justify-self: center;
 }
 
-.signup__image {
-  grid-area: img;
+.product__rating {
+  grid-row: 6 / 7;
+  grid-column: 1 / 2;
+
+  align-self: start;
 }
 
-.title {
-  grid-area: title;
-}
-
-.email {
-  grid-area: email;
-}
-
-.password {
-  grid-area: password;
-}
-
-.signup__signup-btn,
-.signin-btn {
-  width: 100%;
-  padding: 1.4rem 0;
-  border: none;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-.signup__signup-btn {
-  grid-area: signup;
-  background-color: #242f9b;
-  color: #fff;
-}
-
-.signin-btn {
-  grid-area: signin;
-  background-color: #dbdffd;
-  color: #242f9b;
-}
-
-.already {
-  grid-area: already;
-}
-
-.email label,
-.password label {
-  font-size: 1.6rem;
-}
-
-.email,
-.password {
-  display: grid;
-  grid-template-rows: auto auto;
-  row-gap: 1rem;
-}
-
-.email input,
-.password input {
-  width: 100%;
-  padding: 1.6rem 2rem;
-  border-radius: 0.8rem;
-  border: 1px solid #757575;
-  outline: none;
-  font-size: 1.8rem;
-}
-
-.already {
-  text-align: center;
-}
-
-.already a {
-  color: #242f9b;
-  cursor: pointer;
+.fa-star {
+  color: #ffa500;
+  font-size: 1.2rem;
 }
