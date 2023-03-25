@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Product Grid</title>
+    <title>Sign Up Page</title>
 
     <link
       rel="stylesheet"
@@ -22,70 +22,56 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <section class="products">
-      <div class="product">
-        <figure class="product__image">
-          <img
-            src="./assets/images/sweater.jpg"
-            alt="Sweater" />
-        </figure>
+    <section class="signup">
+      <figure class="signup__logo">
+        <img
+          src="./assets/images/el.jpg"
+          alt="Logo" />
+      </figure>
 
-        <h5 class="product__category">Winter Clothings</h5>
-        <h5 class="product__special-offer">50% Flat Discount</h5>
+      <p class="logo__desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, rerum?
+        Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Voluptatum error nulla alias suscipit quis.
+      </p>
 
-        <h2 class="product__title">Women winter sweater</h2>
-        <div class="product__price">
-          <span class="previous-price">$48</span>
-          <span class="current-price">$24</span>
-        </div>
-      </div>
+      <figure class="signup__image">
+        <img
+          src="./assets/images/sign-up.jpg"
+          alt="Sign up" />
+      </figure>
 
-      <div class="product">
-        <figure class="product__image">
-          <img
-            src="./assets/images/jacket.jpg"
-            alt="Jacket" />
-        </figure>
+      <h6 class="mini-title">START FOR FREE</h6>
 
-        <h5 class="product__category">Ladies Jacket</h5>
+      <h1 class="title">Sign up to Evolutive Learning</h1>
 
-        <h2 class="product__title">Ladies Jacket</h2>
-        <div class="product__price">
-          <span class="current-price">$49</span>
-        </div>
-      </div>
+      <fieldset class="email">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          name="email" />
+      </fieldset>
 
-      <div class="product">
-        <figure class="product__image">
-          <img
-            src="./assets/images/t-shirt.jpg"
-            alt="T-shirt" />
-        </figure>
+      <fieldset class="password">
+        <label for="password">Password</label>
+        <input
+          type="text"
+          placeholder="At least 8 characters"
+          name="password" />
+      </fieldset>
 
-        <h5 class="product__category">Summer Clothing</h5>
-        <h5 class="product__special-offer">50% Flat Discount</h5>
+      <input
+        type="button"
+        value="Create an account"
+        class="signup__signup-btn" />
 
-        <h2 class="product__title">Men's T-shirt</h2>
-        <div class="product__price">
-          <span class="previous-price">$120</span>
-          <span class="current-price">$60</span>
-        </div>
-      </div>
+      <input
+        type="button"
+        value="Sign up with Google"
+        class="signin-btn" />
 
-      <div class="product">
-        <figure class="product__image">
-          <img
-            src="./assets/images/sunglasses.jpg"
-            alt="Sunglasses" />
-        </figure>
-
-        <h5 class="product__category">Sunglasses</h5>
-
-        <h2 class="product__title">Stylish Black Sunglasses</h2>
-        <div class="product__price">
-          <span class="current-price">$59</span>
-        </div>
-      </div>
+      <h5 class="already">Already have an account? <a>Sign in</a></h5>
     </section>
   </body>
 </html>
