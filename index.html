@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Responsive Product Grid</title>
 
     <link
       rel="stylesheet"
@@ -22,17 +22,70 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <section class="gallery">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <section class="products">
+      <div class="product">
+        <figure class="product__image">
+          <img
+            src="./assets/images/sweater.jpg"
+            alt="Sweater" />
+        </figure>
+
+        <h5 class="product__category">Winter Clothings</h5>
+        <h5 class="product__special-offer">50% Flat Discount</h5>
+
+        <h2 class="product__title">Women winter sweater</h2>
+        <div class="product__price">
+          <span class="previous-price">$48</span>
+          <span class="current-price">$24</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <figure class="product__image">
+          <img
+            src="./assets/images/jacket.jpg"
+            alt="Jacket" />
+        </figure>
+
+        <h5 class="product__category">Ladies Jacket</h5>
+
+        <h2 class="product__title">Ladies Jacket</h2>
+        <div class="product__price">
+          <span class="current-price">$49</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <figure class="product__image">
+          <img
+            src="./assets/images/t-shirt.jpg"
+            alt="T-shirt" />
+        </figure>
+
+        <h5 class="product__category">Summer Clothing</h5>
+        <h5 class="product__special-offer">50% Flat Discount</h5>
+
+        <h2 class="product__title">Men's T-shirt</h2>
+        <div class="product__price">
+          <span class="previous-price">$120</span>
+          <span class="current-price">$60</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <figure class="product__image">
+          <img
+            src="./assets/images/sunglasses.jpg"
+            alt="Sunglasses" />
+        </figure>
+
+        <h5 class="product__category">Sunglasses</h5>
+
+        <h2 class="product__title">Stylish Black Sunglasses</h2>
+        <div class="product__price">
+          <span class="current-price">$59</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
