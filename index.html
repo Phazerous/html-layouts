@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Product Carousel</title>
+    <title>Checkout Section</title>
 
     <link
       rel="stylesheet"
@@ -22,120 +22,123 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <section class="selling">
-      <div class="selling__header">
-        <h6 class="header__subtitle">Most Popular Products</h6>
-        <h1 class="header__title">Best Selling Items</h1>
-        <p class="header__para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-          minus<span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </span>
-        </p>
-      </div>
+    <section class="cart">
+      <h1 class="cart__title">Shopping Cart</h1>
 
       <div class="products">
         <div class="product">
-          <div class="sale-label">-50%</div>
-
           <figure class="product__image">
             <img
-              src="./assets/images/6.1.jpg"
-              alt="Smart Watch" />
+              src="./assets/images/7.1.jpg"
+              alt="Exquisite Skirt" />
           </figure>
-          <h2 class="product__title">Smart Watch</h2>
-          <h3 class="product__price">$75.00 <span>$150.00</span></h3>
 
-          <div>
-            <div class="product__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+          <div class="product__info">
+            <h2 class="product__title">Exquisite Skirt</h2>
+            <h6 class="product__color">Brown</h6>
+            <h6 class="product__size">Size: S</h6>
+            <h6 class="product__availability_avaliable">In Stock</h6>
+            <div class="actions">
+              <input
+                type="button"
+                value="Edit"
+                class="edit-btn" />
+              <input
+                type="button"
+                value="Remove"
+                class="remove-btn" />
             </div>
-
-            <p class="product__rating-desc">5.00 Rating</p>
           </div>
-        </div>
 
-        <div class="product">
-          <div class="hot-label">Hot</div>
-
-          <figure class="product__image">
-            <img
-              src="./assets/images/6.2.jpg"
-              alt="Stylish Backpack" />
-          </figure>
-
-          <h2 class="product__title">Stylish Backpack</h2>
-          <h3 class="product__price">$189.00</h3>
-
-          <div>
-            <div class="product__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-
-            <p class="product__rating-desc">4.00 Rating</p>
+          <div class="product__cost">
+            <h3 class="cost__title">Each</h3>
+            <h3 class="cost__price">$39.00</h3>
           </div>
-        </div>
 
-        <div class="product">
-          <div class="new-label">New</div>
-
-          <figure class="product__image">
-            <img
-              src="./assets/images/6.3.jpg"
-              alt="Luxury Wallet" />
-          </figure>
-
-          <h2 class="product__title">Luxury Wallet</h2>
-          <h3 class="product__price">$189.00</h3>
-
-          <div>
-            <div class="product__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-
-            <p class="product__rating-desc">5.00 Rating</p>
+          <div class="product__quantity">
+            <h3 class="quantity__title">Quantity</h3>
+            <input
+              type="number"
+              name="quantity"
+              value="1" />
           </div>
         </div>
 
         <div class="product">
           <figure class="product__image">
             <img
-              src="./assets/images/6.4.jpg"
-              alt="Polo Shirt" />
+              src="./assets/images/7.2.jpg"
+              alt="Eloquent Sneakers" />
           </figure>
 
-          <h2 class="product__title">Polo Shirt</h2>
-          <h3 class="product__price">$65.00</h3>
-
-          <div>
-            <div class="product__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+          <div class="product__info">
+            <h2 class="product__title">Eloquent Sneakers</h2>
+            <h6 class="product__color">Purple</h6>
+            <h6 class="product__size">Size: M</h6>
+            <h6 class="product__availability_avaliable">In Stock</h6>
+            <div class="actions">
+              <input
+                type="button"
+                value="Edit"
+                class="edit-btn" />
+              <input
+                type="button"
+                value="Remove"
+                class="remove-btn" />
             </div>
+          </div>
 
-            <p class="product__rating-desc">5.00 Rating</p>
+          <div class="product__cost">
+            <h3 class="cost__title">Each</h3>
+            <h3 class="cost__price">$39.00</h3>
+          </div>
+
+          <div class="product__quantity">
+            <h3 class="quantity__title">Quantity</h3>
+            <input
+              type="number"
+              name="quantity"
+              value="1" />
           </div>
         </div>
       </div>
 
-      <div class="nav">
-        <i class="fa-solid fa-angle-left"></i>
-        <i class="fa-solid fa-angle-right"></i>
+      <div class="coupon">
+        <h2 class="coupon__title">Apply coupon to get discount</h2>
+
+        <fieldset>
+          <input
+            type="text"
+            placeholder="Coupon Code"
+            class="coupon-field" />
+          <input
+            type="button"
+            value="Apply"
+            class="coupon-apply" />
+        </fieldset>
+
+        <div class="summary">
+          <h4 class="subtotal">Subtotal</h4>
+          <h4 class="subtotal__price">$138.00</h4>
+
+          <h4 class="shipping">Shipping Cost</h4>
+          <h4 class="shipping__price">$13.50</h4>
+
+          <h4 class="discount">Discount</h4>
+          <h4 class="discount__price">$0.00</h4>
+        </div>
+
+        <div class="total">
+          <h4 class="total__title">Total</h4>
+          <h4 class="total__price">$151.50</h4>
+        </div>
+
+        <input
+          type="button"
+          value="Checkout"
+          class="checkout-btn" />
+
+        <p class="free">You're <span>$10.50</span> away from free shipping</p>
       </div>
     </section>
   </body>
