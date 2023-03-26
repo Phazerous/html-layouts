@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Navbar Section</title>
 
     <link
       rel="stylesheet"
@@ -22,64 +22,51 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <section class="contact">
-      <div class="contact__title-container">
-        <h6 class="contact__subtitle">Contact Us</h6>
-        <h1 class="contact__title">
-          Let's talk about your <span>problem</span>
-        </h1>
+    <header class="header">
+      <div class="about">
+        <ul class="about__actions">
+          <li class="about__item">About Us</li>
+          <li class="about__item">Order Tracking</li>
+          <li class="about__item">Contact Us</li>
+          <li class="about__item">FAQs</li>
+        </ul>
+
+        <div class="about__options">
+          <h3 class="about__lang">
+            English
+            <i class="fa-solid fa-angle-down"></i>
+          </h3>
+          <h3 class="about__currency">
+            USD<i class="fa-solid fa-angle-down"></i>
+          </h3>
+        </div>
       </div>
 
-      <div class="contact__location">
-        <i class="fa-solid fa-location-dot"></i>
-        <h3 class="location__title">Our Location</h3>
-        <p class="location__subtitle">177A Bleecker Street, NYC</p>
-      </div>
+      <nav class="nav">
+        <h2 class="nav__logo">EL</h2>
 
-      <div class="contact__email">
-        <i class="fa-solid fa-envelope"></i>
-        <h3 class="email__title">How can we help?</h3>
-        <p class="email__subtitle">contact@el.cool</p>
-      </div>
+        <ul class="nav__list">
+          <h4 class="nav__item">Home</h4>
+          <h4 class="nav__item">Shop</h4>
+          <h4 class="nav__item">Products</h4>
+          <h4 class="nav__item">Accessories</h4>
+          <h4 class="nav__item">Contact</h4>
+        </ul>
 
-      <form
-        action="#"
-        class="contact__form">
-        <h2 class="form__title">Send us Message</h2>
+        <div class="other">
+          <h3 class="nav__help">
+            <i class="fa-solid fa-phone"></i>
+            Need help?
+          </h3>
+          <h3 class="nav__phone">0093 1324 123 456</h3>
 
-        <fieldset class="form__name">
-          <label for="name">Full Name*</label>
-          <input
-            type="text"
-            name="name" />
-        </fieldset>
-
-        <fieldset class="form__email">
-          <label for="email">Email*</label>
-          <input
-            type="text"
-            name="email" />
-        </fieldset>
-
-        <fieldset class="form__phone">
-          <label for="phone">Phone*</label>
-          <input
-            type="text"
-            name="phone" />
-        </fieldset>
-
-        <fieldset class="form__message">
-          <label for="message">Message*</label>
-          <input
-            type="text"
-            name="message" />
-        </fieldset>
-
-        <input
-          class="form__submit"
-          type="button"
-          value="Send Message" />
-      </form>
-    </section>
+          <div class="nav__details">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"><div class="heart">3</div></i>
+            <i class="fa-solid fa-cart-shopping"><div class="cart">1</div></i>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
