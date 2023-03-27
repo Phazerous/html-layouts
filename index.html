@@ -22,83 +22,73 @@
       href="./assets/style.css" />
   </head>
   <body>
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__useful-links">
-          <h2 class="useful-links__title">Useful Links</h2>
+    <section class="signup">
+      <div class="signup__content">
+        <h1 class="signup__title">Sign Up</h1>
 
-          <ul class="useful-links__list">
-            <li>Legal & Privacy</li>
-            <li>Contact</li>
-            <li>Gift Card</li>
-            <li>Customer Service</li>
-            <li>My Account</li>
-          </ul>
+        <p class="signup__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolor.
+          <span>Lorem ipsum dolor sit amet.</span>
+        </p>
+
+        <h3 class="signup__with">Sign Up With</h3>
+
+        <div class="signup__google">
+          <i class="fa-brands fa-google"></i>
+          <h3>Sign up with Google</h3>
         </div>
 
-        <nav class="footer__nav">
-          <div class="nav__shop">
-            <h2 class="shop__title">Shop</h2>
-
-            <ul class="shop__list">
-              <li>TVs</li>
-              <li>Washing Machines</li>
-              <li>A/Cs</li>
-              <li>Laptops</li>
-              <li>Accessories</li>
-            </ul>
-          </div>
-
-          <div class="nav__account">
-            <h2 class="account__title">My account</h2>
-
-            <ul class="account__list">
-              <li>My Profile</li>
-              <li>My Order history</li>
-              <li>My Wishlist</li>
-              <li>Order Tracking</li>
-              <li>Shopping Cart</li>
-            </ul>
-          </div>
-
-          <div class="nav__company">
-            <h2 class="company__title">Company</h2>
-
-            <ul class="company__list">
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Our Blog</li>
-              <li>Affiliate</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="footer__help">
-          <h2 class="help__title">Need help? Call us now</h2>
-          <h2 class="help__title">0093 1234 568 7845</h2>
-          <p class="help__subtitle">Monday — Friday 09:00 — 20:00</p>
-
-          <div class="social">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
+        <div class="signup__facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+          <h3>Sign up with Facebook</h3>
         </div>
+
+        <fieldset class="signup__name">
+          <label for="name">Username</label>
+          <input
+            type="text"
+            name="name"
+            class="name-field" />
+        </fieldset>
+
+        <fieldset class="signup__email">
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            name="email"
+            class="email-field" />
+        </fieldset>
+
+        <fieldset class="signup__password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="password-field" />
+        </fieldset>
+
+        <div class="signup__terms">
+          <input
+            type="checkbox"
+            name="terms"
+            class="terms__checkbox" />
+          <p class="terms__para">
+            I've read and agree with <a href="#">Terms of service</a>, and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+
+        <input
+          type="button"
+          value="Create Account"
+          class="signup__signup-btn" />
       </div>
 
-      <div class="footer__bottom">
-        <h3 class="copyright">Copyright. All Rights Reserved</h3>
-
-        <div class="payment">
-          <i class="fa-brands fa-cc-paypal"></i>
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-amex"></i>
-          <i class="fa-brands fa-cc-discover"></i>
-        </div>
-      </div>
-    </footer>
+      <figure class="signup__image">
+        <img
+          src="./assets/images/9.jpg"
+          alt="Sign up Image" />
+      </figure>
+    </section>
   </body>
 </html>
